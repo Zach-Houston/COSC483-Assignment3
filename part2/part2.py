@@ -81,8 +81,6 @@ if __name__ == "__main__":
     msg = bytes('', encoding='utf-8')
     for line in msgFile:
         msg += line
-# Hash for Hash-and-MAC implemented here:
-    msg = bytes(hashlib.sha512(msg).hexdigest(), encoding='utf-8')
 # Generate "1" IV
     iv = '0000000000000001'
     iv = bytes(iv, encoding='utf-8')
